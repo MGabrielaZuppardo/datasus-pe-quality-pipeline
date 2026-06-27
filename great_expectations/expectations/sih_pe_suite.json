@@ -1,0 +1,34 @@
+{
+  "expectation_suite_name": "sih_pe_suite",
+  "expectations": [
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": { "column": "N_AIH" }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": { "column": "N_AIH" }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": { "column": "CNES" }
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "DIAS_PERM",
+        "min_value": 0,
+        "max_value": 365,
+        "mostly": 0.99
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "MUNIC_RES",
+        "regex": "^26\\d{4}$",
+        "mostly": 0.7
+      }
+    }
+  ]
+}
