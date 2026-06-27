@@ -216,3 +216,16 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+.claude
+
+# Dados DATASUS (não commitar — LGPD e tamanho)
+data/raw/
+data/parquet/
+data/exports/
+data/*.duckdb
+
+# Great Expectations — gerado automaticamente
+great_expectations/validations/
+great_expectations/data_docs/
+great_expectations/uncommitted/
