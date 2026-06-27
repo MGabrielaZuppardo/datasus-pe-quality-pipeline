@@ -1,0 +1,7 @@
+datasus_pe:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('DUCKDB_PATH', '../data/datasus_pe.duckdb') }}"
+      threads: 4
