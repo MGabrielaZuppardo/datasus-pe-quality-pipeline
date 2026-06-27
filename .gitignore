@@ -218,6 +218,7 @@ __marimo__/
 .streamlit/secrets.toml
 
 .claude
+.memory
 
 # Dados DATASUS (não commitar — LGPD e tamanho)
 data/raw/
